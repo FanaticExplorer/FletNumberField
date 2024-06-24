@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numberfield-flet"
+version = "1.0.0"
+description = "A custom Flet TextField that only accepts numerical input (int or float)."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "FanaticExplorer", email = "andrey.gurtov@gmail.com", homepage = "https://github.com/FanaticExplorer"},
+]
+dependencies = [
+    "flet",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+urls = { "Homepage" = "https://github.com/FanaticExplorer/FletNumberField" }
