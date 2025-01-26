@@ -31,8 +31,9 @@ class NumberField(ft.TextField):
 
     def _custom_on_change(self, e):
         try:
-            # Convert the input to the specified numerical type
-            e.control.value = int(e.control.value) if self.input_type == "int" else float(e.control.value)
+            # Convert the input to the specified numerical type if value is provided
+            if e.control.value != "":
+                e.control.value = int(e.control.value) if self.input_type == "int" else float(e.control.value)
         except ValueError:
             # Handle invalid input
             e.control.value = self.last_value
